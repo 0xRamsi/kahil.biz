@@ -1,0 +1,2 @@
+{{ with resources.Get (print "pics/homepage/icons/" (.Get "src")) }} {{ .Content
+| safeHTML }} {{ end }}

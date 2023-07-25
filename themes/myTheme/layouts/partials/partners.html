@@ -1,0 +1,8 @@
+<div class="partners-slider-container">
+  <div class="partners-slider">
+    {{ range $img := resources.Match "pics/partners/*" }} {{ with .Resize "120x"
+    }}
+    <img src="{{ .Permalink }}" />
+    {{ end }} {{ end }}
+  </div>
+</div>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html dir="rtl">
+  <head>
+    {{ partial "meta.html" }}
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  </head>
+
+  <body>
+    {{ partial "nav.html" . }}
+    <div
+      class="content"
+      style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center"
+    >
+      {{ range $img := resources.Match "pics/showcase/*" }} {{ with .Resize
+      "300x" }}
+      <img src="{{ .Permalink }}" />
+      {{ end }} {{ end }}
+    </div>
+    {{ partial "footer.html" . }}
+  </body>
+</html>

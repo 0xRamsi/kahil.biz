@@ -1,0 +1,4 @@
+<a
+  href="mailto:{{.Get "src"}}{{if or (.Get "subject") (.Get "body")}}?{{with .Get "subject"}}subject={{htmlUnescape .}}&{{end}}{{with .Get "body"}}body={{htmlUnescape .}}{{end}}{{end}}"
+  >{{.Get "displayText"}}</a
+>

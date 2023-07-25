@@ -1,0 +1,6 @@
+<meta charset="utf-8" />
+<title>{{ .Page.Title }}</title>
+{{ $style := resources.Get "sass/main.scss" | resources.ToCSS | resources.Minify
+}} {{ $background := resources.Get "pics/background-gray.jpg" }}
+<link rel="stylesheet" href="{{ $style.Permalink }}" />
+<img src="{{ $background.Permalink }}" style="display: none" />

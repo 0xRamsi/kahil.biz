@@ -1,0 +1,5 @@
+<img src="{{ .Get "src" }}" {{ if or (.Get "width") (.Get "height") }}
+style="{{with .Get "width"}}width: {{ . }}; {{ end }} {{with .Get
+"height"}}height: {{ . }} {{else}} height:auto {{ end }};" {{ end }} {{ if or
+(.Get "alt") (.Get "caption") }} alt="{{with .Get "alt" }}{{ . }}{{ else }}{{
+.Get "caption" }}{{ end }}" {{ end }} />

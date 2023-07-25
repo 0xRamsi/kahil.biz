@@ -1,0 +1,5 @@
+baseURL = 'http://example.org/'
+languageCode = 'he'
+title = 'כחיל הדפסות משי'
+theme = 'myTheme'
+contentDir = 'content'

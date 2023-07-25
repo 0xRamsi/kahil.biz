@@ -1,0 +1,38 @@
+{{ $tshirt := resources.Get (print "pics/homepage/icons/t-shirt.svg") }} {{ $hat
+:= resources.Get (print "pics/homepage/icons/hat.svg") }} {{ $work :=
+resources.Get (print "pics/homepage/icons/work.svg") }}
+
+<style>
+  .homepageContent {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .homepageContent ul {
+    list-style: none;
+    display: grid;
+    align-content: space-evenly;
+  }
+  .homepageContent ul li {
+    display: flex;
+    gap: 0.5rem;
+  }
+</style>
+
+<div class="homepageContent">
+  <img src="/products.png" />
+
+  <ul>
+    <li>
+      {{ $tshirt.Content | safeHTML }}
+      <span style="font-weight: bold">חולצות</span>
+    </li>
+    <li>
+      {{ $hat.Content | safeHTML }}
+      <span style="font-weight: bold">כובעים</span>
+    </li>
+    <li>
+      {{ $work.Content | safeHTML }}
+      <span style="font-weight: bold">ביגוד עבודה</span>
+    </li>
+  </ul>
+</div>

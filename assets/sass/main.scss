@@ -1,0 +1,90 @@
+body {
+  margin: 0 auto;
+  font-family: Arial;
+  font-size: x-large;
+  background-image: url(/pics/background-gray.jpg);
+  width: 1400px;
+  max-width: 90%;
+}
+
+nav {
+  padding: 0 1rem;
+  display: flex;
+  align-items: baseline;
+  background-color: #fff;
+
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+div.content {
+  margin: 0;
+  padding: 1rem;
+  background-color: #eee;
+  display: grid;
+
+  align-items: center;
+}
+
+div.partners-slider-container {
+  @keyframes mySlider {
+    from {
+      left: -10rem;
+    }
+    to {
+      left: 100%;
+    }
+  }
+
+  background-color: #eee;
+  overflow-x: hidden;
+
+  div.partners-slider {
+    display: flex;
+    gap: 10rem;
+    position: relative;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+
+    animation: 10s linear infinite alternate running mySlider;
+
+    &:hover {
+      animation-play-state: paused;
+    }
+  }
+}
+
+footer {
+  margin: 0;
+  padding: 2rem 8rem;
+  background-color: #000;
+  font-size: large;
+
+  .tagline {
+    font-style: italic;
+    color: #3bd515;
+    font-size: large;
+    text-align: center;
+    padding-bottom: 2rem;
+    margin: 0;
+  }
+
+  div {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      color: #fff;
+    }
+  }
+}
