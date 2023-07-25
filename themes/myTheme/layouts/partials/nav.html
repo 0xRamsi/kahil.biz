@@ -1,11 +1,11 @@
 <nav>
-  <a href="/" class="header-link">
+  <a href="{{ .Site.BaseURL }}/" class="header-link">
     <h1 class="heading">{{ .Site.Title }}</h1>
   </a>
   <ul>
-    <li><a href="/showcase">תיק עבודות</a></li>
-    <li><a href="/about">אודות</a></li>
-    <li><a href="/contact">צור קשר</a></li>
-    <li><a href="/products">מוצרים</a></li>
+    <li><a href="{{ .Site.BaseURL }}/showcase">תיק עבודות</a></li>
+    <li><a href="{{ .Site.BaseURL }}/about">אודות</a></li>
+    <li><a href="{{ .Site.BaseURL }}/contact">צור קשר</a></li>
+    <li><a href="{{ .Site.BaseURL }}/products">מוצרים</a></li>
   </ul>
 </nav>
