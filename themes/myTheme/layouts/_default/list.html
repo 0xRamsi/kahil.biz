@@ -7,15 +7,6 @@
   <body>
     {{ partial "nav.html" . }}
     <div class="content">{{.Content}}</div>
-
-    <section class="flex-ns flex-wrap justify-around mt5">
-      {{ range .Paginator.Pages }}
-      <div class="relative w-100 w-30-l mb4 bg-white">
-        {{ .Render "summary" }}
-      </div>
-      {{ end }}
-    </section>
-
     {{ partial "footer.html" . }}
   </body>
 </html>

@@ -3,3 +3,5 @@ languageCode = 'he'
 title = 'כחיל הדפסות משי'
 theme = 'myTheme'
 contentDir = 'content'
+[params]
+  email = '1kahil@gmail.com'
