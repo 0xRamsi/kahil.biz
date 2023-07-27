@@ -3,10 +3,6 @@
 resources.Get (print "pics/homepage/icons/work.svg") }}
 
 <style>
-  .homepageContent {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-  }
   .homepageContent ul {
     list-style: none;
     display: grid;
@@ -19,8 +15,6 @@ resources.Get (print "pics/homepage/icons/work.svg") }}
 </style>
 
 <div class="homepageContent">
-  <img src="./products.png" />
-
   <ul>
     <li>
       {{ $tshirt.Content | safeHTML }}
