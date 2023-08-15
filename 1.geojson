@@ -1,0 +1,73 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          13.30495,
+          53.03314
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "Vbat": 4.04,
+        "Vbus": 0.0,
+        "bssid": "AC:A3:1E:88:E4:01",
+        "dir": 26,
+        "lat": 53.03314,
+        "lon": 13.30495,
+        "marker-color": "#cc0",
+        "marker-symbol": "rocket",
+        "name": "Bummelbahn",
+        "next_stop": {
+          "ds100": "GAW",
+          "eta": "2023-08-16T00:06:49.131577Z",
+          "name": "Alte Werkstätten",
+          "trackmarker": 34,
+          "type": "Bf"
+        },
+        "rssi": -79,
+        "sat": 12,
+        "speed": 0.4,
+        "timestamp": "2023-08-15T19:15:39Z",
+        "trackmarker": 1975,
+        "trackname": "Marschbahn"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.3048,
+          53.03291
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "Vbat": 4.08,
+        "Vbus": 0.0,
+        "bssid": "C8:B5:AD:B9:AE:81",
+        "dir": 341,
+        "lat": 53.03291,
+        "lon": 13.3048,
+        "marker-color": "#cc0",
+        "marker-symbol": "rocket",
+        "name": "Trans-Habitat-Exp",
+        "next_stop": {
+          "ds100": "GAW",
+          "eta": "2023-08-15T19:29:26.990493Z",
+          "name": "Alte Werkstätten",
+          "trackmarker": 34,
+          "type": "Bf"
+        },
+        "rssi": -87,
+        "sat": 11,
+        "speed": 0.1,
+        "timestamp": "2023-08-15T19:15:39Z",
+        "trackmarker": 11,
+        "trackname": "Werkstatt"
+      },
+      "type": "Feature"
+    }
+  ],
+  "type": "FeatureCollection"
+}
