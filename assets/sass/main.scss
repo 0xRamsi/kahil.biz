@@ -33,6 +33,13 @@ div.content {
   align-items: center;
 }
 
+div#contact {
+  grid-template-columns: 1fr 2fr;
+  @media (max-width: 576px) {
+    grid-template-columns: auto;
+  }
+}
+
 div.partners-slider-container {
   @keyframes mySlider {
     from {
