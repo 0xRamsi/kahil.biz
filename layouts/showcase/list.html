@@ -1,19 +1,35 @@
 <!DOCTYPE html>
 <html dir="rtl">
   <head>
-    {{ partial "meta.html" }}
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    {{ partial "meta.html" }} {{ with .Resources.Get "showcase.js" }}
+    <script src="{{ .RelPermalink }}"></script>
+    {{ end }}
+    <title>כחיל הדפסות משי - תיק עבודות</title>
   </head>
 
   <body>
     {{ partial "nav.html" . }}
+    <div id="myModal" class="modal" onclick="closeModalPic();">
+      <div class="modal-content">
+        <div
+          id="modal-img"
+          style="display: flex; justify-content: center; align-content: center"
+        >
+          Some content in the Modal..
+        </div>
+      </div>
+    </div>
     <div
       class="content"
       style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center"
     >
       {{ range $img := resources.Match "pics/showcase/*" }} {{ with .Resize
       "300x242" }}
-      <img src="{{ .Permalink }}" />
+      <img
+        class="rounded"
+        onclick="showModalPic('{{ $img.Permalink }}');"
+        src="{{ .Permalink }}"
+      />
       {{ end }} {{ end }}
     </div>
     {{ partial "footer.html" . }}
