@@ -10,10 +10,10 @@
     <div class="content" id="contact">
       <div>
         <h3>כתובת</h3>
-        חולון, רח’ הבנאי 29/134
+        רמלה, הרצל 84 <span style="font-size: large">(כניסה מרח' דני מס)</span>
 
         <h3>טלפון</h3>
-        03-5586547 / 052-2681749
+        052-2681749
 
         <h3>Email</h3>
         <a href="mailto:{{ $.Site.Params.email }}?subject=הזמנה מהאתר"
@@ -21,10 +21,9 @@
         >
       </div>
 
-      {{ range $img := resources.Match "pics/contact/map.png" }} {{ $pos :=
-      "32.0071,34.799" }}
+      {{ range $img := resources.Match "pics/contact/map.png" }}
       <a
-        href="https://www.google.com/maps/place/{{ $pos }}/@{{ $pos }},17z/"
+        href="https://www.google.com/maps/place/Sderot+Herzl+84,+Ramla,+Israel"
         alt="Link to Google-Maps."
       >
         <div

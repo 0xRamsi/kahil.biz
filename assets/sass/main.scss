@@ -66,9 +66,6 @@ img.rounded {
 
 div#contact {
   grid-template-columns: 1fr 2fr;
-  @media (max-width: 576px) {
-    grid-template-columns: auto;
-  }
 }
 
 div.partners-slider-container {
@@ -124,5 +121,11 @@ footer {
       flex-direction: column;
       color: #fff;
     }
+  }
+}
+
+@media all and (max-width: 1000px) {
+  div#contact {
+    grid-template-columns: auto;
   }
 }
